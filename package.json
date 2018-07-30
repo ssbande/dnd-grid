@@ -1,0 +1,31 @@
+{
+  "name": "dnd-grid-react",
+  "version": "0.3.2",
+  "main": "build/index.js",
+  "repository": "https://github.com/ssbande/dnd-grid.git",
+  "author": "shreyas bande",
+  "license": "",
+  "description": "",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "scripts": {
+    "build": "babel src -d build",
+    "prepublish": "npm run build",
+    "start": "npm build && npm link"
+  }
+}
